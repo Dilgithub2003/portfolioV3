@@ -32,7 +32,7 @@ export function ContactSection() {
     }
   };
   return <section id="contact" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <motion.div initial={{
         opacity: 0,
         y: 20
@@ -43,17 +43,17 @@ export function ContactSection() {
         once: true
       }} transition={{
         duration: 0.5
-      }} className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      }} className="mb-16 text-center">
+          <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
             Get In Touch
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="max-w-2xl mx-auto text-lg text-gray-600">
             Have a project in mind or want to discuss technology? I'd love to
             hear from you.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24">
           {/* Contact Info */}
           <motion.div initial={{
           opacity: 0,
@@ -66,14 +66,14 @@ export function ContactSection() {
         }} transition={{
           duration: 0.5
         }}>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+            <h3 className="mb-8 text-2xl font-bold text-gray-900">
               Contact Information
             </h3>
 
-            <div className="space-y-6 mb-12">
+            <div className="mb-12 space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="bg-blue-100 p-3 rounded-lg text-blue-600">
-                  <MapPin className="h-6 w-6" />
+                <div className="p-3 text-blue-600 bg-blue-100 rounded-lg">
+                  <MapPin className="w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-gray-900">
@@ -84,40 +84,40 @@ export function ContactSection() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-blue-100 p-3 rounded-lg text-blue-600">
-                  <Phone className="h-6 w-6" />
+                <div className="p-3 text-blue-600 bg-blue-100 rounded-lg">
+                  <Phone className="w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-gray-900">Phone</h4>
-                  <a href="tel:+94701664179" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  <a href="tel:+94701664179" className="text-gray-600 transition-colors hover:text-blue-600">
                     (+94) 701664179
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-blue-100 p-3 rounded-lg text-blue-600">
-                  <Mail className="h-6 w-6" />
+                <div className="p-3 text-blue-600 bg-blue-100 rounded-lg">
+                  <Mail className="w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-gray-900">Email</h4>
-                  <a href="mailto:avgthilinadilshan@gmail.com" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  <a href="mailto:avgthilinadilshan@gmail.com" className="text-gray-600 transition-colors hover:text-blue-600">
                     avgthilinadilshan@gmail.com
                   </a>
                 </div>
               </div>
             </div>
 
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Connect</h3>
+            <h3 className="mb-6 text-2xl font-bold text-gray-900">Connect</h3>
             <div className="flex space-x-4">
-              <a href="#" className="bg-gray-100 p-4 rounded-lg text-gray-600 hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1" aria-label="GitHub">
-                <Github className="h-6 w-6" />
+              <a href="https://github.com/Dilgithub2003" className="p-4 text-gray-600 transition-all duration-300 transform bg-gray-100 rounded-lg hover:bg-blue-600 hover:text-white hover:-translate-y-1" aria-label="GitHub">
+                <Github className="w-6 h-6" />
               </a>
-              <a href="#" className="bg-gray-100 p-4 rounded-lg text-gray-600 hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1" aria-label="LinkedIn">
-                <Linkedin className="h-6 w-6" />
+              <a href="https://www.linkedin.com/in/thilina-dilshan-3718b92a3/" className="p-4 text-gray-600 transition-all duration-300 transform bg-gray-100 rounded-lg hover:bg-blue-600 hover:text-white hover:-translate-y-1" aria-label="LinkedIn">
+                <Linkedin className="w-6 h-6" />
               </a>
-              <a href="mailto:avgthilinadilshan@gmail.com" className="bg-gray-100 p-4 rounded-lg text-gray-600 hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1" aria-label="Email">
-                <Mail className="h-6 w-6" />
+              <a href="mailto:avgthilinadilshan@gmail.com" className="p-4 text-gray-600 transition-all duration-300 transform bg-gray-100 rounded-lg hover:bg-blue-600 hover:text-white hover:-translate-y-1" aria-label="Email">
+                <Mail className="w-6 h-6" />
               </a>
             </div>
           </motion.div>
@@ -133,44 +133,44 @@ export function ContactSection() {
           once: true
         }} transition={{
           duration: 0.5
-        }} className="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-100">
+        }} className="p-8 border border-gray-100 shadow-sm bg-gray-50 rounded-2xl">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-700">
                   Your Name
                 </label>
-                <input type="text" id="name" name="name" required className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-shadow outline-none bg-white" placeholder="John Doe" />
+                <input type="text" id="name" name="name" required className="w-full px-4 py-3 transition-shadow bg-white border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="John Doe" />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-700">
                   Email Address
                 </label>
-                <input type="email" id="email" name="email" required className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-shadow outline-none bg-white" placeholder="john@example.com" />
+                <input type="email" id="email" name="email" required className="w-full px-4 py-3 transition-shadow bg-white border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="john@example.com" />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-700">
                   Message
                 </label>
-                <textarea id="message" name="message" required rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-shadow outline-none bg-white resize-none" placeholder="How can I help you?" />
+                <textarea id="message" name="message" required rows={4} className="w-full px-4 py-3 transition-shadow bg-white border border-gray-300 rounded-lg outline-none resize-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="How can I help you?" />
               </div>
 
-              <button type="submit" disabled={isSubmitting} className="w-full flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all disabled:opacity-70 disabled:cursor-not-allowed shadow-lg hover:shadow-xl">
+              <button type="submit" disabled={isSubmitting} className="flex items-center justify-center w-full px-8 py-4 text-base font-medium text-white transition-all bg-blue-600 border border-transparent rounded-lg shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-70 disabled:cursor-not-allowed hover:shadow-xl">
                 {isSubmitting ? <>
-                    <Loader2 className="animate-spin -ml-1 mr-2 h-5 w-5" />
+                    <Loader2 className="w-5 h-5 mr-2 -ml-1 animate-spin" />
                     Sending...
                   </> : <>
-                    <Send className="-ml-1 mr-2 h-5 w-5" />
+                    <Send className="w-5 h-5 mr-2 -ml-1" />
                     Send Message
                   </>}
               </button>
 
-              {submitStatus === 'success' && <div className="p-4 bg-green-50 text-green-700 rounded-lg text-sm font-medium animate-fade-in text-center">
+              {submitStatus === 'success' && <div className="p-4 text-sm font-medium text-center text-green-700 rounded-lg bg-green-50 animate-fade-in">
                   Message sent successfully! I'll get back to you soon.
                 </div>}
 
-              {submitStatus === 'error' && <div className="p-4 bg-red-50 text-red-700 rounded-lg text-sm font-medium animate-fade-in text-center">
+              {submitStatus === 'error' && <div className="p-4 text-sm font-medium text-center text-red-700 rounded-lg bg-red-50 animate-fade-in">
                   Error sending message. Please try again later.
                 </div>}
             </form>
